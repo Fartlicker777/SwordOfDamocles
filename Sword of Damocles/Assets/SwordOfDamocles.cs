@@ -36,6 +36,7 @@ public class SwordOfDamocles : MonoBehaviour {
    bool BossModulePresent;
    public static string[] ignoredModules = null;
    int StoredSolves;
+   string AHardPlace;
 
    Coroutine Idle;
 
@@ -226,6 +227,7 @@ public class SwordOfDamocles : MonoBehaviour {
       }
       Solved++;
       Debug.LogFormat("[Sword of Damocles #{0}] Solving \"{1}\".", ModuleId, weed);
+      AHardPlace = weed;
       //Debug.Log(Random.ModuleDisplayName);
    }
 
